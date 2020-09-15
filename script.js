@@ -19,8 +19,8 @@ function enterTile() {
 	let tileId = $(this).attr("id");
 	tileId = tileId.slice(1); // remove c
 	tileId = tileId.split("-"); // split into array
-	row = tileId[0];
-	column = tileId[1];
+	row = +tileId[0];
+	column = +tileId[1];
 
 	// Add border to show which tile the mouse is on and display row & column
 	$(this).css("border", "1px solid red");
