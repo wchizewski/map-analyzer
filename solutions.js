@@ -6,20 +6,31 @@ let row, column;
 // Solution Functions...
 function level1Solution() {
 	// USE BINARY IF STATEMENT
-	
-	document.getElementById("currentTile").innerHTML = "----"; // Set output text
+	if (column <= 4) {
+		document.getElementById("currentTile").innerHTML = "Sand"
+	} else {
+		document.getElementById("currentTile").innerHTML = "Water"
+	}
 }
 
 function level2Solution() {
 	// USE CHAINED IF STATEMENT
-	
-	document.getElementById("currentTile").innerHTML = "----"; // Set output text
+	if (column <= 2) {
+		document.getElementById("currentTile").innerHTML = "Hills"; 
+	} else if(column <= 7) {
+		document.getElementById("currentTile").innerHTML = "Sand";
+	} else {
+		document.getElementById("currentTile").innerHTML = "Water";
+	}
 }
+
 
 function level3Solution() {
 	// USE BINARY IF STATEMENT
-	
-	document.getElementById("currentTile").innerHTML = "----"; // Set output text
+	if (column <= 2 || column >= 8 ) {
+		document.getElementById("currentTile").innerHTML = "Hills";
+	} else if (column <= 7) 
+	document.getElementById("currentTile").innerHTML = "Sand";
 }
 
 function level4Solution() {
@@ -85,5 +96,5 @@ function level13Solution() {
 function level14Solution() {
 	// USE CHAINED IF STATEMENT
 
-	document.getElementById("currentTile").innerHTML = "----"; // Set output text
+	document.getElementById("currentTile").innerHTML = "----"; // Set output text\
 }
